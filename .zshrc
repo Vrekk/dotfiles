@@ -60,6 +60,8 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  sudo
+  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -92,3 +94,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias config='/usr/bin/git --git-dir=/home/brett/.cfg/ --work-tree=/home/brett'
+alias gitauth='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github_rsa'
