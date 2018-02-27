@@ -6,4 +6,3 @@ Probably not something you want to down just clone and use yourself, but cherry 
 See here for how I set this up.
 https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 
-Test edit
