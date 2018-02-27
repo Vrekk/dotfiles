@@ -20,7 +20,10 @@ exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id kdeconnect-indicator #Commented until I can manage all the notifcations
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-exec spotify
+#if using snap/deb/other uncomment the line below
+#exec spotify
+#if using flatpak, uncomment the line below
+exec flatpak run com.spotify.Client/x86_64/stable
 for_window [class="Spotify"] move scratchpad
 
 ########## Keybindings ##########
